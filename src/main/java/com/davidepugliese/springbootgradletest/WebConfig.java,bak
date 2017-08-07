@@ -1,0 +1,20 @@
+package com.davidepugliese.springbootgradletest;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class WebConfig implements JtwigViewResolverConfigurer {
+    @Override
+    public void configure(JtwigViewResolver viewResolver) {
+        viewResolver.setRenderer(new JtwigRenderer(EnvironmentConfigurationBuilder
+                .configuration()
+                .extensions().add(new MyExtension()).and()
+                .build()));
+    }
+
+    private static class MyExtension implements Extension {
+        @Override
+        public void configure(EnvironmentConfigurationBuilder configurationBuilder) {
+            // change config
+        }
+    }
+}
