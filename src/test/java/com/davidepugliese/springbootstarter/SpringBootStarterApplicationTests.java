@@ -1,4 +1,4 @@
-package com.davidepugliese.springbootgradletest;
+package com.davidepugliese.springbootstarter;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringBootGradleTestApplicationTests {
+public class SpringBootStarterApplicationTests {
 
 	@Test
 	public void contextLoads() {

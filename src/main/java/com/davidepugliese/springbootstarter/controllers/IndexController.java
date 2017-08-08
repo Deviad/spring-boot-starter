@@ -1,4 +1,4 @@
-package com.davidepugliese.springbootgradletest.controllers;
+package com.davidepugliese.springbootstarter.controllers;
 
 
 import org.springframework.stereotype.Controller;

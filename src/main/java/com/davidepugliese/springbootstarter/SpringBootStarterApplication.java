@@ -1,4 +1,4 @@
-package com.davidepugliese.springbootgradletest;
+package com.davidepugliese.springbootstarter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,9 +6,9 @@ import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan(basePackages="com.davidepugliese")
 @SpringBootApplication
-public class SpringBootGradleTestApplication {
+public class SpringBootStarterApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootGradleTestApplication.class, args);
+		SpringApplication.run(SpringBootStarterApplication.class, args);
 	}
 }
